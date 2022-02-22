@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bin": "index.js",
+    "build": "pkg -t macos -o bin/filegenerator index.js",
+    "copy": "sudo cp bin/filegenerator /usr/local/bin/filegenerator"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^8.2.0"
+    "inquirer": "^8.2.0",
+    "pkg": "^5.5.2"
   }
 }
